@@ -26,6 +26,7 @@ def directors_totals(nds)
     total_gross = 0;
     while column_index < direcotr_gross.count do
       total_gross += direcotr_gross[column_index][:worldwide_groos]
+      column_index +=1
     end
   end
 
