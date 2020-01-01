@@ -22,19 +22,19 @@ def directors_totals(nds)
   result = {}
   row_index = 0;
   while row_index < nds.count do
-    direcotr_name = nds[row_index][:name]
-    direcotr_gross = nds[row_index][:movies]
+    director_name = nds[row_index][:name]
+    director_gross = nds[row_index][:movies]
 
-    result = "#{direcotr_name}"
+    result = "#{director_name}"
     column_index = 0;
 
-    while column_index < direcotr_gross.count do
+    while column_index < director_gross.count do
       total_gross = 0
-      total_gross += direcotr_gross[column_index][:worldwide_gross]
+      total_gross += director_gross[column_index][:worldwide_gross]
       column_index +=1
-      puts direcotr_gross.length + "!!!!!!!!!!!!!!!!!"
+      puts director_gross.length + "!!!!!!!!!!!!!!!!!"
     end
-    result << {"#{direcotr_name}" => total_gross}
+    result << {"#{director_name}" => total_gross}
     row_index += 1
   end
    result
