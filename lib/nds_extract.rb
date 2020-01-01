@@ -36,5 +36,5 @@ def directors_totals(nds)
     result << {"#{direcotr_name}" => total_gross}
     row_index += 1
   end
-  return result
+  pp result
 end
