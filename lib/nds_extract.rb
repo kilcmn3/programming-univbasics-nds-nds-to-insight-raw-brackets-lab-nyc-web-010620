@@ -37,6 +37,7 @@ def directors_totals(nds)
     result << {"#{director_name}" => total_gross}
     row_index += 1
   end
+  puts director_gross.length + "!!!!!!!!!!!!!!!!!"
    result
 end
 
