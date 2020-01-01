@@ -24,7 +24,7 @@ def directors_totals(nds)
     direcotr_gross = nds[row_index][:movies]
     column_index = 0;
     total_gross = 0;
-    while column_index < nds[row_index].count do
+    while column_index < direcotr_gross.count do
 
     end
   end
