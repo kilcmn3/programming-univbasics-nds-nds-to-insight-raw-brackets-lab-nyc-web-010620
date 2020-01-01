@@ -32,7 +32,7 @@ def directors_totals(nds)
       total_gross = 0
       total_gross += direcotr_gross[column_index][:worldwide_gross]
       column_index +=1
-      puts total_gross
+      puts direcotr_gross.length + "!!!!!!!!!!!!!!!!!"
     end
     result << {"#{direcotr_name}" => total_gross}
     row_index += 1
@@ -40,4 +40,4 @@ def directors_totals(nds)
    result
 end
 
-pp directors_database
+# pp directors_database
