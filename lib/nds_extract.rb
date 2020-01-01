@@ -19,6 +19,7 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
+  result.Hash.new
   row_index = 0;
   while row_index < nds.count do
     direcotr_gross = nds[row_index][:movies]
@@ -28,6 +29,8 @@ def directors_totals(nds)
       total_gross += direcotr_gross[column_index][:worldwide_groos]
       column_index +=1
     end
+    resut
+    row_index += 1
   end
 
 end
