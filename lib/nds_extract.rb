@@ -19,8 +19,19 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  \
+  row_index = 0;
+  while row_index < nds.count do 
+    direcotr_gross = nds[row_index][:movies]
+    column_index = 0;
+    total_gross = 0;
+    while column_index < nds[row_index].count do 
+      
+    end
+  end
+  
 end
 
 
 direcotr[i][:name] => director[i][:movies][i][:worldwide_groos]
+
+resut = {:expected => {direcotr[i][:name] =>director[i][:movies][i][:worldwide_groos]} }
